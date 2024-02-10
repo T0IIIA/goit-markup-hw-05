@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoIT hw-04</title>
+    <title>GoIT hw-05</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -54,7 +54,7 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-heading">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="button">Order Service</button>
         </div>
       </section>
 
@@ -539,5 +539,93 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="text">Leave your contacts and we will call you back</p>
+
+        <form action="modal-form">
+          <div class="modal-field">
+            <label class="modal-label" for="user_name">Name</label>
+            <div class="input-container">
+              <input
+                type="text"
+                name="user_name"
+                id="user_name"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user_tel">Phone</label>
+            <div class="input-container">
+              <input
+                type="text"
+                name="user_tel"
+                id="user_tel"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user_email">Email</label>
+            <div class="input-container">
+              <input
+                type="text"
+                name="user_email"
+                id="user_email"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user_comment">Comment</label>
+            <textarea
+              name="user_comment"
+              placeholder="Text input"
+              class="modal-input modal-textarea"
+              id="user_comment"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              class="form-check"
+              name="policy"
+              id="policy"
+              value="true"
+              required
+            />
+            <label class="check-text" for="policy">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="http://" class="privacy_policy">Privacy Policy</a></label
+            >
+          </div>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

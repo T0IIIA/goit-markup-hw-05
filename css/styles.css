@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #FFF;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
     min-height: 100vh;
     display: flex;
@@ -161,15 +161,15 @@ a {
   display: block;
   background-color: #2E2F42;
   padding: 188px 0;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/goit-markup-hw-04/images/people-office.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1440px;
-    background-size: cover;
-    margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/goit-markup-hw-04/images/people-office.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  background-size: cover;
+  margin: 0 auto;
 }
 
-.hero-button {
+.button {
   display: block;
   background-color: #4D5AE5;
   color: #FFF;
@@ -187,8 +187,8 @@ a {
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover, 
-.hero-button:focus {
+.button:hover, 
+.button:focus {
   background-color: #404BBF;
 }
 
@@ -420,3 +420,155 @@ margin-bottom: 16px;
 .footer .icon-link:hover, .footer .icon-link:focus {
   background-color: #31D0AA;
 }
+
+/*=================================MODAL====================================*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(46, 47, 66, 0.40);
+}
+
+.modal {
+  padding: 24px;
+  padding-top: 72px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: #FCFCFC;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.modal-close {      /* <<< button to close modal */
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: #E7E9FC;
+  border: 1px solid #0000001A;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover, .modal-close:focus {
+  background-color: #404BBF;
+  fill: #FFFFFF;
+}
+
+.modal-close:active {
+  background-color: #E7E9FC;
+  fill: #000000;
+}
+
+.backdrop .text {
+color: #2E2F42;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 8px;
+}
+
+.modal-label {
+  display: block;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  margin-bottom: 4px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.modal-input {
+  display: block;
+  min-width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.modal-input:focus {
+  border-color: #4D5AE5;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus + .modal-icon {
+  fill:#4D5AE5;
+}
+
+.modal-textarea {
+  display: block;
+  height: 136px;
+  min-width: 100%;
+  padding-left: 16px;
+  padding-top: 8px;
+  resize: none;
+  margin-bottom: 16px;
+}
+
+.modal-textarea::placeholder {
+color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+}
+
+.check-text {
+  display: block;
+  color: #8E8F99;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+.check-text span {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.privacy_policy {
+  color: #4D5AE5;
+  font-size: 12px;
+  line-height: 133%;
+  text-decoration-line: underline;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
