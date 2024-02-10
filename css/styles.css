@@ -615,8 +615,6 @@ color: #2E2F42;
 }
 
 .check-text {
-  display: inline-flex;
-  align-items: center;
   color: #8E8F99;
   font-size: 12px;
   line-height: 117%;
@@ -625,7 +623,7 @@ color: #2E2F42;
 }
 
 .check-span-icon {
-  display: flex;
+  display: inline-flex;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
@@ -636,10 +634,6 @@ color: #2E2F42;
   margin-right: 5px;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop span{
-display: inline-flex;
 }
 
 .form-check:checked + .check-text .check-span-icon {
