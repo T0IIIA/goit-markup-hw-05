@@ -444,7 +444,7 @@ margin-bottom: 16px;
   margin-right: 24px;
   color: #FFFFFF;
   font-size: 12px;
-  line-height: 2;
+  line-height: 200%;
   letter-spacing: 0.04em;
 }
 
@@ -452,7 +452,7 @@ margin-bottom: 16px;
   color:#FFFFFF;
 }
 
-.footer .button {
+.footer-subscribe .button {
 display: inline-flex;
 padding: 8px 24px;
 justify-content: center;
@@ -462,7 +462,7 @@ height: 40px;
 gap: 16px;
 }
 
-.icon-subscribe{
+.footer-subscribe .icon-subscribe{
   fill: #FFFFFF;
   margin-left: 16px;
 }
@@ -615,7 +615,7 @@ color: #2E2F42;
 }
 
 .check-text {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   color: #8E8F99;
   font-size: 12px;
@@ -624,7 +624,7 @@ color: #2E2F42;
   margin-bottom: 24px;
 }
 
-.check-span-icon {
+.check-text .check-span-icon {
   display: inline-flex;
   flex-shrink: 0;
   justify-content: center;
