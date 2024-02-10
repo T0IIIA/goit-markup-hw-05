@@ -624,8 +624,8 @@ color: #2E2F42;
   margin-bottom: 24px;
 }
 
-.check-text .check-span-icon {
-  display: inline-flex;
+.check-span-icon {
+  display: flex;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
