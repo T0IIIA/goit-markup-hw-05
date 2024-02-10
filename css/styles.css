@@ -615,7 +615,7 @@ color: #2E2F42;
 }
 
 .check-text {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: #8E8F99;
   font-size: 12px;
